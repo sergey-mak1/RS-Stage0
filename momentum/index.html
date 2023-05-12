@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owfont-regular.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Momentum</title>
+</head>
+
+<body>
+    <div class="preload">
+        <img src="../momentum/assets/preloader.gif" class="preload-image" alt="preloader">
+    </div>
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="player">
+            <div class="player-controls">
+                <button class="play-prev button"></button>
+                <button class="play button switch"></button>
+                <button class="play-next button"></button>
+            </div>
+
+            <div class="title">
+                <div class="audio-title"></div>
+            </div>
+            <progress value="0" max="100" class="range"></progress>
+            <span class="time-progress">-- : --</span>
+            <span class="audio-length">-- : --</span>
+            <progress max="100" class="volume"></progress>
+            <button class="button mute mute-off"></button>
+            <button class="button button-playlist"></button>
+            <ul class="play-list"></ul>
+        </div>
+        <div class="weather">
+            <input type="text" class="city">
+            <i class="weather-icon owf"></i>
+            <span class="temperature"></span>
+            <span class="weather-description"></span>
+            <span class="wind-speed"></span>
+            <span class="humidity"></span>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="slider-icons">
+                <button class="slider-next slider"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32" viewBox="0 0 64 64">
+                        <title></title>
+                        <path d="M15.625 11l5.75-5.625 26.625 26.625-26.625 26.625-5.75-5.625 21.125-21z"></path>
+                    </svg>
+                </button>
+                <button class="slider-prev slider"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32" viewBox="0 0 64 64">
+                        <title></title>
+                        <path d="M31.125 10.375l-21.625 21.625 21.625 21.625-4.75 4.75-26.375-26.375 26.375-26.375z">
+                        </path>
+                    </svg></button>
+            </div>
+            <div class="time"></div>
+            <div class="date"></div>
+            <div class="greeting-container">
+                <span class="greeting"></span>
+                <input type="text" class="name">
+            </div>
+            <div class="todo-list">
+                <div class="todo-input">
+                    <span class="button-clear">Clear History</span>
+                    <input class="todo-value">
+                    <button type="button" class="todo-add"></button>
+                </div>
+                <div class="todo-select">
+                    <div class="select-head">
+                        <span class="select-title"></span>
+                        <span class="select-ico"></span>
+                    </div>
+                    <ul class="select-list">
+                        <li class="select-item active">active</li>
+                        <li class="select-item completed">completed</li>
+                        <li class="select-item deleted">deleted</li>
+                    </ul>
+                </div>
+
+                <div class="items-list">
+                    <ul class="todo-items active-items todo-items-active"></ul>
+                    <ul class="todo-items completed-items"></ul>
+                    <ul class="todo-items deleted-items"></ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+
+        <button type="button" class="quote-button"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32"
+                height="32" viewBox="0 0 64 64">
+                <title></title>
+                <path fill="#fff"
+                    d="M55.605 10.395c-5.851-6.388-14.26-10.395-23.605-10.395-17.673 0-32 14.327-32 32h6c0-14.359 11.641-26 26-26 7.689 0 14.596 3.339 19.356 8.644l-9.356 9.356h22v-22l-8.395 8.395z">
+                </path>
+                <path fill="#fff"
+                    d="M58 32c0 14.359-11.641 26-26 26-7.689 0-14.596-3.339-19.356-8.644l9.356-9.356h-22v22l8.395-8.395c5.851 6.389 14.26 10.395 23.605 10.395 17.673 0 32-14.327 32-32h-6z">
+                </path>
+            </svg></button>
+        <div class="quote-container">
+            <div class="quote-text"></div>
+            <div class="quote-author"></div>
+        </div>
+
+        <button type="button" class="button button-settings "></button>
+        <div class="footer-links">
+            <a href="https://rs.school/js/" class="rs-school-link"></a>
+            <a href="https://github.com/sergey-mak1" class="github-link"></a>
+            <span class="year">2023</span>
+        </div>
+        <ul class="settings">
+            <li class="language setting-item">
+                <span class="setting-title language-title">Language</span>
+                <div class='language-switch'>
+                    <span class="on selected english">En</span>
+                    <div class="switch-button"></div>
+                    <span class="off russian">Ru</span>
+                </div>
+            </li>
+            <li class="player-setting setting-item">
+                <span class="setting-title player-title">Player</span>
+                <div class='player-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class="weather-setting setting-item">
+                <span class="setting-title weather-title">Weather</span>
+                <div class='weather-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class="time-setting setting-item">
+                <span class="setting-title time-title">Time</span>
+                <div class='time-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class="date-setting setting-item">
+                <span class="setting-title date-title">Date</span>
+                <div class='date-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class="greeting-setting setting-item">
+                <span class="setting-title greeting-title">Greeting</span>
+                <div class='greeting-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class="quote-setting setting-item">
+                <span class="setting-title quote-title">Quote</span>
+                <div class='quote-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class="todo-setting setting-item">
+                <span class="setting-title todo-title">ToDoList</span>
+                <div class='todo-switch'>
+                    <span class="on selected">On</span>
+                    <div class="switch-button"></div>
+                    <span class="off">Off</span>
+                </div>
+            </li>
+            <li class='setting-item'>
+                <div class="image-title">
+                    <span class="image-server">Image Server</span>
+                    <button type="button" class="image-button button"></button>
+                </div>
+                <ul class="image-list">
+                    <li class="image-item github-server">GitHub</li>
+                    <li class="image-item unsplash-server">Unsplash API</li>
+                    <li class="image-item flickr-server">Flickr API</li>
+                </ul>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
